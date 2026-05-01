@@ -1,0 +1,159 @@
+:root {
+--primary-dark: #0A0054;
+--primary-light: #021382;
+--color-white: #FFFFFF;
+--color-blue: #2A12E7;
+}
+
+body {
+background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%);
+min-height: 100vh;
+display: flex;
+align-items: center;
+font-family: 'Inter', sans-serif;
+padding: 30px 0;
+}
+
+.register-container {
+background: white;
+border-radius: 20px;
+box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+overflow: hidden;
+max-width: 600px;
+margin: auto;
+}
+
+.register-header {
+background: var(--primary-light);
+color: white;
+padding: 40px;
+text-align: center;
+}
+
+.register-header h1 {
+margin: 0;
+font-size: 2.5rem;
+font-weight: 700;
+}
+
+.register-body {
+padding: 40px;
+}
+
+.form-label {
+font-weight: 600;
+color: var(--primary-dark);
+}
+
+.form-control {
+border: none;
+border-bottom: 2px solid #e0e0e0;
+border-radius: 0;
+padding: 10px 0;
+transition: border-color 0.3s;
+}
+
+.form-control:focus {
+box-shadow: none;
+border-color: var(--color-blue);
+}
+
+.btn-register {
+background: var(--primary-dark);
+color: white;
+border: none;
+padding: 12px;
+border-radius: 50px;
+font-weight: 600;
+width: 100%;
+margin-top: 20px;
+transition: all 0.3s;
+}
+
+.btn-register:hover {
+background: var(--color-blue);
+transform: translateY(-2px);
+}
+
+.back-btn {
+position: absolute;
+top: 30px;
+left: 30px;
+color: white;
+font-size: 2rem;
+text-decoration: none;
+transition: transform 0.3s;
+}
+
+.back-btn:hover {
+transform: translateX(-5px);
+color: white;
+}
+
+.text-link {
+color: var(--color-blue);
+text-decoration: none;
+}
+
+.text-link:hover {
+text-decoration: underline;
+}
+
+.alert {
+border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+body {
+padding: 20px 10px;
+}
+
+.register-container {
+max-width: 100%;
+margin: auto;
+}
+
+.register-header {
+padding: 30px 20px;
+}
+
+.register-header h1 {
+font-size: 2rem;
+}
+
+.register-body {
+padding: 30px 20px;
+}
+
+.back-btn {
+top: 20px;
+left: 20px;
+font-size: 1.5rem;
+}
+
+.row {
+--bs-gutter-x: 0;
+}
+
+.col-md-6 {
+margin-bottom: 1rem;
+}
+}
+
+@media (max-width: 480px) {
+.register-header h1 {
+font-size: 1.8rem;
+}
+
+.register-body {
+padding: 20px;
+}
+
+.form-control {
+font-size: 16px;
+}
+
+.btn-register {
+font-size: 16px;
+}
+}

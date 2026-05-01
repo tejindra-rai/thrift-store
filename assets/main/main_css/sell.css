@@ -1,0 +1,146 @@
+:root {
+    --primary-dark: #0A0054;
+    --primary-light: #021382;
+    --color-blue: #2A12E7;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.sell-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+
+.page-title {
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.form-control, .form-select {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--color-blue);
+    box-shadow: none;
+}
+
+.btn-submit {
+    background: var(--primary-dark);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    background: var(--color-blue);
+    transform: translateY(-2px);
+}
+
+.image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+}
+
+.required {
+    color: red;
+}
+
+.image-upload-area {
+    border: 3px dashed #e0e0e0;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.image-upload-area:hover {
+    border-color: var(--color-blue);
+    background: #f8f9fa;
+}
+
+.image-upload-area i {
+    font-size: 3rem;
+    color: var(--color-blue);
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .sell-container {
+        margin: 20px;
+        padding: 25px;
+        border-radius: 15px;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .image-upload-area {
+        padding: 30px 15px;
+    }
+
+    .image-upload-area i {
+        font-size: 2rem;
+    }
+
+    .image-preview img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sell-container {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .page-title {
+        font-size: 1.3rem;
+    }
+
+    .btn-submit {
+        padding: 12px 30px;
+        font-size: 0.95rem;
+    }
+
+    .form-control, .form-select {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
